@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kontak - Portofolio Mahasiswa</title>
+    <link rel="stylesheet" href="kontak.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formulir Kontak</h1>
+        <p>Hubungi saya untuk pertanyaan dan kolaborasi proyek.</p>
+    </header>
+
+    <main>
+        <a href="index.html" class="btn-kembali">
+            &larr; Kembali ke Beranda
+        </a>
+
+        <section>
+            <h2>Kirimkan Pesan atau Penawaran Proyek</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nama_pengirim">
+                        Nama Lengkap Anda:
+                    </label>
+                    <input
+                        type="text"
+                        id="nama_pengirim"
+                        name="nama_pengirim"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email_pengirim">
+                        Alamat Email:
+                    </label>
+                    <input
+                        type="email"
+                        id="email_pengirim"
+                        name="email_pengirim"
+                        placeholder="contoh@email.com"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="jenis_layanan">
+                        Layanan yang Dibutuhkan:
+                    </label>
+                    <select
+                        id="jenis_layanan"
+                        name="jenis_layanan"
+                        required
+                    >
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="web">Pembuatan Web</option>
+                        <option value="app">Pengembangan Aplikasi</option>
+                        <option value="other">Lain-lain</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pesan">Pesan:</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="6"
+                        placeholder="Tuliskan pesan atau detail proyek Anda..."
+                        required
+                    ></textarea>
+                </p>
+
+                <div class="form-buttons">
+                    <button type="submit">Kirim Pesan</button>
+                    <button type="reset">Reset Formulir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknik Informatika ITG</p>
+        <p>Portofolio Mahasiswa - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+
+/* =========================
+   RESET DASAR
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    background-color: #f5f7fb;
+    color: #334155;
+}
+
+hr {
+    display: none;
+}
+
+/* =========================
+   HEADER
+========================= */
+body > header {
+    background-color: #ffffff;
+    color: #14213d;
+    padding: 25px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+body > header h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #14213d;
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* =========================
+   KONTEN UTAMA
+========================= */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+/* =========================
+   DAFTAR PROYEK
+========================= */
+#daftar-proyek {
+    background-color: #ffffff;
+    padding: 35px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+#daftar-proyek h2 {
+    color: #14213d;
+    font-size: 25px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   KARTU PROYEK
+========================= */
+#daftar-proyek article {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#daftar-proyek article:last-child {
+    margin-bottom: 0;
+}
+
+#daftar-proyek article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+    border-color: #bfdbfe;
+}
+
+#daftar-proyek article header {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 12px;
+    border: none;
+    box-shadow: none;
+}
+
+#daftar-proyek article h3 {
+    color: #1e293b;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+#daftar-proyek article p {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+#daftar-proyek article ul {
+    padding-left: 25px;
+    color: #475569;
+}
+
+#daftar-proyek article li {
+    margin-bottom: 5px;
+}
+
+/* =========================
+   BAGIAN KOLABORASI
+========================= */
+aside {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 28px 30px;
+    background-color: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+}
+
+aside h3 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+aside p {
+    color: #475569;
+}
+
+aside a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #14213d;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE TABLET & HP
+========================= */
+@media (max-width: 768px) {
+    body > header {
+        padding: 22px 15px;
+    }
+
+    body > header h1 {
+        font-size: 23px;
+    }
+
+    nav ul {
+        gap: 12px 20px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    #daftar-proyek {
+        padding: 22px;
+    }
+
+    #daftar-proyek h2 {
+        font-size: 22px;
+    }
+
+    #daftar-proyek article {
+        padding: 18px;
+    }
+
+    #daftar-proyek article h3 {
+        font-size: 17px;
+    }
+
+    aside {
+        margin: 20px 15px;
+        padding: 22px;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP KECIL
+========================= */
+@media (max-width: 400px) {
+    body > header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 10px 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #daftar-proyek {
+        padding: 18px;
+    }
+
+    #daftar-proyek article {
+        padding: 15px;
+    }
+
+    aside {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+}
